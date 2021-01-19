@@ -1,0 +1,61 @@
+html {
+  background-color: black;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-right: 3%;
+}
+
+#main_block {
+  background-color: white;
+  padding: 20px;
+}
+#top_block{
+
+}
+#order_block {
+    clear: both;
+
+  margin: 10px;
+  padding-top: 10px;
+
+}
+#order_no{
+    float: left;
+}
+#renew{
+    float: right;
+
+}
+.name_of_dish .price_of_dish {
+    
+
+  /*display: inline-block;
+  margin-bottom: 10px;
+  */
+}
+.name_of_dish {
+/*display: inline;*/
+
+float: left;
+
+}
+.price_of_dish{
+/*display: inline;*/
+float: right;
+
+}
+.extra{
+    clear: both;
+    border-left: 2px grey solid;
+    margin-left: 30px;
+    padding-left: 5px;
+
+    margin-top: 30px;
+}
+.customize{
+    
+    color: palevioletred;
+    margin-left: 10px;
+    font-size: small;
+    margin: 7px;
+}
