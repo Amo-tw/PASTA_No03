@@ -9,53 +9,57 @@ html {
   background-color: white;
   padding: 20px;
 }
-#top_block{
-
+#top_block {
 }
 #order_block {
-    clear: both;
+  clear: both;
 
   margin: 10px;
   padding-top: 10px;
-
 }
-#order_no{
-    float: left;
+#order_no {
+  float: left;
 }
-#renew{
-    float: right;
-
+#renew {
+  float: right;
 }
 .name_of_dish .price_of_dish {
-    
-
   /*display: inline-block;
   margin-bottom: 10px;
   */
 }
 .name_of_dish {
-/*display: inline;*/
+  /*display: inline;*/
 
-float: left;
-
+  float: left;
 }
-.price_of_dish{
-/*display: inline;*/
-float: right;
-
+.abbr_name {
+  clear: both;
+  color: white;
 }
-.extra{
-    clear: both;
-    border-left: 2px grey solid;
-    margin-left: 30px;
-    padding-left: 5px;
-
-    margin-top: 30px;
+.price_of_dish {
+  /*display: inline;*/
+  float: right;
 }
-.customize{
-    
-    color: palevioletred;
-    margin-left: 10px;
-    font-size: small;
-    margin: 7px;
+.extra {
+  clear: both;
+  border-left: 2px grey solid;
+  margin-left: 30px;
+  padding-left: 10px;
+  line-height: 30px;
+
+  margin-top: 10px;
+}
+.customize {
+  color: palevioletred;
+  margin-left: 10px;
+  font-size: small;
+  margin: 7px;
+}
+#buttom_block {
+  background-color: white;
+  margin-bottom: 30px;
+}
+#display_ans {
+  float: right;
 }
