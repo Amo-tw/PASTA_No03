@@ -21,12 +21,16 @@ function changeDish(amount_dish, isSP) {
       dishes[this_dish].abbr;
 
     if (isSP === "sp") {
-        var add_item = add_meal();
+      var add_item = add_meal();
+      var sp_order = add_sp();
       document.getElementsByClassName("extra")[i].innerHTML = add_item.item;
-      document.getElementsByClassName("customize")[i].innerHTML = "** "+add_sp();
+      if (sp_order != "") {
+        document.getElementsByClassName("customize")[i].innerHTML =
+          "** " + sp_order;
+      }
 
       document.getElementsByClassName("price_of_dish")[i].innerHTML =
-      dishes[this_dish].price + add_item.price + " TWD";
+        dishes[this_dish].price + add_item.price + " TWD";
     }
   }
 }
