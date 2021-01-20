@@ -140,7 +140,7 @@ var dishes = [
     abbr: "龍蝦醬",
   },
   {
-    name: "雞肉時蔬筆管麵",
+    name: "雞肉時蔬焗筆管麵",
     price: 169,
     abbr: "雞肉焗麵",
   },
