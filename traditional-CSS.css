@@ -36,6 +36,7 @@ html {
 .abbr_name {
   clear: both;
   color: white;
+  font-size: small;
 }
 .price_of_dish {
   /*display: inline;*/
@@ -62,4 +63,13 @@ html {
 }
 #display_ans {
   float: right;
+  border: 1px black solid;
+    background-color: black;
+    color: white;
+}
+
+#renew{
+    border: 1px black solid;
+    background-color: black;
+    color: white;
 }
