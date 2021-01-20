@@ -7,7 +7,7 @@ function renew() {
 function getRandom(x) {
   return Math.floor(Math.random() * x) + 1;
 }
-function changeDish(amount_dish) {
+function changeDish(amount_dish, isSP) {
   for (var i = 0; i < amount_dish; i++) {
     var this_dish = getRandom(35 - 1);
 
@@ -19,14 +19,19 @@ function changeDish(amount_dish) {
 
     document.getElementsByClassName("abbr_name")[i].innerHTML =
       dishes[this_dish].abbr;
-    /*
-    document.getElementsByClassName("extra")[i].innerHTML = "333";
-    document.getElementsByClassName("customize")[i].innerHTML = "** 不要胡椒";
-    */
+
+    if (isSP === "sp") {
+        var add_item = add_meal();
+      document.getElementsByClassName("extra")[i].innerHTML = add_item.item;
+      document.getElementsByClassName("customize")[i].innerHTML = "** "+add_sp();
+
+      document.getElementsByClassName("price_of_dish")[i].innerHTML =
+      dishes[this_dish].price + add_item.price + " TWD";
+    }
   }
 }
 
-function num_of_dish() {
+function num_of_dish(isSP) {
   var amount_dish = getRandom(4);
 
   var one_dish =
@@ -40,7 +45,18 @@ function num_of_dish() {
       document.getElementById("order_block").innerHTML += "<hr>";
   }
 
-  changeDish(amount_dish);
+  changeDish(amount_dish, isSP);
+}
+
+function add_meal() {
+  var add = getRandom(extra_meal.length);
+
+  return extra_meal[add - 1];
+}
+function add_sp() {
+  var add = getRandom(order_make.length);
+
+  return order_make[add - 1];
 }
 
 function answer() {
@@ -49,4 +65,7 @@ function answer() {
   for (var i = 0; i < abb.length; i++) {
     abb[i].style.color = "red";
   }
+}
+function sp_order() {
+  num_of_dish("sp");
 }

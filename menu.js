@@ -175,3 +175,47 @@ var dishes = [
     abbr: "玉米湯",
   },
 ];
+
+var extra_meal = [
+  {
+    item: "加大",
+    price: 20,
+  },
+  {
+    item: "加花椰菜",
+    price: 20,
+  },
+  {
+    item: "加雞肉",
+    price: 40,
+  },
+  {
+    item: "加焗烤",
+    price: 40,
+  },
+  {
+    item: "加綜合海鮮",
+    price: 70,
+  },
+  {
+    item: "加雞腿",
+    price: 90,
+  },
+  {
+    item: "加豬排",
+    price: 90,
+  },
+  {
+    item: "",
+    price: 0,
+  },
+];
+var order_make = [
+  "不要胡椒",
+  "不要蒜",
+  "海鮮換成蝦",
+  "汁多",
+  "麵硬",
+  "改筆管麵",
+  "",
+];

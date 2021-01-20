@@ -20,8 +20,22 @@ html {
 #order_no {
   float: left;
 }
+#sp{
+    float: right;
+
+    border: 1px black solid;
+    background-color: black;
+    color: white;
+
+}
 #renew {
   float: right;
+
+  border: 1px black solid;
+    background-color: black;
+    color: white;
+
+    margin: 0 5px;
 }
 .name_of_dish .price_of_dish {
   /*display: inline-block;
@@ -64,12 +78,6 @@ html {
 #display_ans {
   float: right;
   border: 1px black solid;
-    background-color: black;
-    color: white;
-}
-
-#renew{
-    border: 1px black solid;
     background-color: black;
     color: white;
 }
