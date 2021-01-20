@@ -52,7 +52,7 @@ var dishes = [
   {
     name: "蕃茄鮮蝦麵",
     price: 169,
-    abbr: "番茄鮮蝦",
+    abbr: "番茄蝦",
   },
   {
     name: "蕃茄香煎烤雞腿",
@@ -72,7 +72,7 @@ var dishes = [
   {
     name: "辣味香腸起司麵",
     price: 149,
-    abbr: "辣味香腸？",
+    abbr: "香腸",
   },
   {
     name: "香蒜辣味花椰雞肉麵",
@@ -92,7 +92,7 @@ var dishes = [
   {
     name: "香蒜辣味海鮮干貝麵",
     price: 220,
-    abbr: "辣味海鮮",
+    abbr: "海鮮干貝",
   },
   {
     name: "青醬雞肉麵",
